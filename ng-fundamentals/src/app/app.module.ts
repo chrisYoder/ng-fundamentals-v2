@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HighlightDirective } from '.directives/highlight.directive';
+import { HighlightDirective } from './directives/highlight/highlight.directive';
+import { AppUnlessDirective } from './directives/appUnless/app-unless.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HighlightDirective
+    HighlightDirective,
+    AppUnlessDirective
   ],
   imports: [
     BrowserModule,
